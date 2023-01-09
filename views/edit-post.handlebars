@@ -1,0 +1,25 @@
+<form id="edit-post-form" class="editor-form">
+  <input type="hidden" name="post-id" id="post-id" value="{{post.id}}" />
+  <div>
+    <label class="form-label" for="post-title">Title</label>
+    <input type="text" name="post-title" id="post-title" value="{{post.title}}" class="form-input" />
+  </div>
+  <div class="grid-col-tablet gap-16r">
+    <div>
+      <label class="form-label" for="post-body">Body</label>
+      <textarea name="post-body" id="post-body" class="form-input">{{post.body}}</textarea>
+    </div>
+    <div>
+      <label class="form-label" for="post-scratch">Scratch</label>
+      <textarea name="post-scratch" id="post-scratch" class="form-input">{{post.scratch}}</textarea>
+    </div>
+  </div>
+  <div class="editor-buttons flex-row justify-start gap-16r">
+    <button type="submit">Update</button>
+    <button type="reset">Revert Changes</button>
+    <button type="button" id="delete-btn">Delete</button>
+  </div>
+</form>
+
+<script src="/js/edit.js"></script>
+<script src="/js/writing.js"></script>

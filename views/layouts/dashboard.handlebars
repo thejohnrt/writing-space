@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{pageName}} | Writing Space</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="min-100-vh">
+  <div id="skip-to-content">
+    <a href="#main">Skip to content</a>
+  </div>
+  <header class="site-header pi-16r pb-8r flex-row justify-space-between align-center">
+    <p class="site-title m-0">Writing Space</p>
+    <nav class="site-navigation">
+      <ul class="m-0 p-0 list-style-none flex-row gap-16r">
+        <li><a href="/">Home</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><button type="button" id="logout-btn">Log Out</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="mb-20r mi-auto pi-16r">
+    <h1>{{pageName}}</h1>
+    {{{body}}}
+  </main>
+</body>
+
+<script src="/js/logout.js"></script>
+
+</html>

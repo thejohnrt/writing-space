@@ -1,0 +1,14 @@
+<ul class="m-0">
+  {{#each posts}}
+  <li>
+    <a class="flex-row justify-space-between" href="/dashboard/edit/{{id}}">
+      <span>{{title}}</span>
+      <span>{{format_date createdAt}}</span>
+    </a>
+  </li>
+  {{/each}}
+</ul>
+<hr>
+<footer class="flex-row justify-center">
+  <a href="/dashboard/new">New Post</a>
+</footer>

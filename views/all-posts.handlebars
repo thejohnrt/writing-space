@@ -1,0 +1,12 @@
+<ul class="list-style-none m-0 p-0">
+  {{#each posts}}
+  <li>
+    <article>
+      <h2>
+        <a href="/post/{{id}}">{{title}}</a>
+      </h2>
+      <p class="m-0">Written by {{Account.account_name}} on {{format_date createdAt}}</p>
+    </article>
+  </li>
+{{/each}}
+</ul>
